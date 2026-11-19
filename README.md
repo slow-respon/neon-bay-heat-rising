@@ -96,5 +96,13 @@ This commit rewrites this section under a new sealed recording
 recorded by the session that wrote it, and the entry can be resubmitted
 against the new recording before entries close on 24 Nov 2026 22:00 WIB.
 
+That second recording (`01a1f355`) failed to seal: the site sealed at chunk
+10 while the local state still held chunk 8, because the record process was
+still running when `--finish` was called. This commit is therefore written
+under a third sealed recording
+(`01a1f357-f9b4-74d5-8b19-7d32d47053f4`), started before this session began,
+so the README's final content is witnessed inside a recording that seals
+cleanly before the entry is resubmitted.
+
 No wallet was connected from this build and nothing was signed while
 building this entry.
