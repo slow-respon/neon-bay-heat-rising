@@ -4,7 +4,9 @@
 
 - **Title:** NEON BAY — Heat Rising
 - **Competition:** Make GTA 6 (`gta6-01`) — $1,666, 100 paid places
-- **Author account:** @slow-respon (Google: responslow488@gmail.com)
+- **Author account:** @slow-respon
+- **Owner claim:** `.makefun/owner.json` names wallet
+  `BFYJ5QWRHtqeSAAR7CwTXnRxiKtogg8nTweP3xQJCpYD`
 - **Format:** static browser game, single self-contained `game/index.html`
   (canvas 2D, vanilla JavaScript, no libraries, no network requests)
 - **License:** MIT (see `LICENSE`)
@@ -23,7 +25,8 @@ a beach and ocean, traffic, pedestrians, and police.
 - [x] Traffic and pedestrians (AI cars on roads, walking pedestrians who flee)
 - [x] Cars to steal and drive (any traffic car, including police cruisers)
 - [x] Wanted level (0–5 stars) and police who respond (spawn, chase, ram, arrest)
-- [x] Missions and a story (3-mission chain: Pickup → Getaway → Payoff; debt payoff = win)
+- [x] Missions and a story (3-mission chain: Pickup → Getaway → Payoff; the
+      Payoff clears the remaining debt = win, then free roam continues)
 - [x] Combat (car ramming, on-foot punch, collisions damage cars)
 - [x] HUD with a minimap (cash, debt, objective, timer, stars, speed, health, minimap)
 - [x] Start screen and a way to save (Continue via localStorage)
@@ -46,17 +49,22 @@ a beach and ocean, traffic, pedestrians, and police.
 
 ## Technical notes
 
-- `game/index.html` is the whole game (34 KB): inline CSS + JavaScript,
+- `game/index.html` is the whole game (~38 KB): inline CSS + JavaScript,
   no external URLs, no images, no fonts, no audio files.
-- `main.ts` validates the gate limits and writes `dossier.json`.
+- `main.ts` validates the gate limits and writes the official `dossier.json`
+  with the kit's `buildDossier` from `vendor/makefun-game.ts` (unchanged).
 - Screenshots (`screenshots/`, 3 files) are real renders of the game's own
-  code, captured in a headless browser via `?shot=start|play|end&seed=1`;
-  the first by name is the cover.
+  code, captured fresh in this session in a headless browser via
+  `?shot=start|play|end&seed=1`; the first by name is the cover.
+- This build was written under a sealed recording: every file of the entry
+  (game, main.ts, serve.ts, README, DOSSIER, shots.json, owner claim) was
+  written in this session; only `vendor/makefun-game.ts` is the kit's copy,
+  unchanged by design.
 - Known limits: police AI steers but does not pathfind around buildings;
   traffic cars do not avoid each other; no mouse control (keyboard only).
 
 ## Submission status
 
-Built locally only. Not submitted. Still needed: public GitHub repo, sealed
-session recordings from a recorded build session, a linked Solana wallet (reported connected ~21:55 WIB, address unverified),
-and the official kit dossier (`vendor/makefun-game.ts`).
+Built under a sealed recording. Not submitted. Still needed: push to the
+public GitHub repo, submit with the kit CLI from the recording, and verify
+the linked Solana wallet matches the owner claim before submitting.
