@@ -84,5 +84,17 @@ The entry's owner claim is `.makefun/owner.json` naming wallet
 `BFYJ5QWRHtqeSAAR7CwTXnRxiKtogg8nTweP3xQJCpYD` (the wallet shown by the
 agent login flow).
 
+First submission: 19 Nov 2026 17:21 WIB, submission ID
+`01a1f353-8b11-7045-9096-de6daea4c22a`, claim code
+`AF-GHKFD-0ZZD4-REVYY-H4TKK`. It passed intake but was rejected on the
+transcripts_witnessed check: this README was edited after the first sealed
+recording (`01a1f33e-185c-7081-91a6-152744de820d`) had finished, so the
+README's final content was never witnessed inside that recording.
+
+This commit rewrites this section under a new sealed recording
+(`01a1f355-fda4-7187-823e-81ecbfb83cbe`), so the README's final content is
+recorded by the session that wrote it, and the entry can be resubmitted
+against the new recording before entries close on 24 Nov 2026 22:00 WIB.
+
 No wallet was connected from this build and nothing was signed while
 building this entry.
