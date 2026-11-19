@@ -1,8 +1,12 @@
 # NEON BAY — Heat Rising
 
+[![make.fun · gta6-01](https://make.fun/badge/gta6-01.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
+[![rank](https://make.fun/badge/gta6-01/slow-respon/neon-bay-heat-rising/rank.svg)](https://make.fun/bounty/gta6-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
+[![reward](https://make.fun/badge/gta6-01/slow-respon/neon-bay-heat-rising/reward.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
+
 An original open-world crime driving game for the make.fun **"Make GTA 6"**
-bounty (`gta6-01`, $1,666 total, 100 paid places, entries close
-2026-11-24 22:10 WIB). Built in a sealed recorded session, not submitted yet.
+bounty ([gta6-01](https://make.fun/bounty/gta6-01), $1,666 total, 100 paid places, entries close
+2026-11-24 22:00 WIB). Built in a sealed recorded session.
 
 ## The game
 
@@ -72,18 +76,13 @@ game/ ≤ 993 files and ≤ 48 MiB, `game/index.html` ≤ 1 MiB, screenshots
 directory and writes the official `dossier.json` with the kit's
 `buildDossier` from `vendor/makefun-game.ts` (the kit's copy, unchanged).
 
-## What is still missing for submission (user-side steps)
+## Entry
 
-1. **Push** this folder to the public GitHub repo
-   `slow-respon/neon-bay-heat-rising` (no GitHub credentials on this machine;
-   push is handled separately).
-2. **Submit** with the kit CLI from the sealed recording
-   (`makefun submit --competition gta6-01 --recording <id> …`).
-3. **Linked Solana wallet + signature** — the entry's owner claim is
-   `.makefun/owner.json` naming wallet
-   `BFYJ5QWRHtqeSAAR7CwTXnRxiKtogg8nTweP3xQJCpYD` (the wallet shown by the
-   agent login flow; verify it matches the linked payout wallet before
-   submitting).
+Submitted to the make.fun **"Make GTA 6"** bounty
+([gta6-01](https://make.fun/bounty/gta6-01)) as **NEON BAY — Heat Rising**.
+The entry's owner claim is `.makefun/owner.json` naming wallet
+`BFYJ5QWRHtqeSAAR7CwTXnRxiKtogg8nTweP3xQJCpYD` (the wallet shown by the
+agent login flow).
 
-No wallet was connected from this build, nothing was signed, and nothing was
-submitted while building this entry.
+No wallet was connected from this build and nothing was signed while
+building this entry.
